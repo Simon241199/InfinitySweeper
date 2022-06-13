@@ -39,7 +39,7 @@ public class Main {
 
 			gui.display(minefield, currentRow);
 			last = System.currentTimeMillis() / 1000.0;
-			if (minefield.getBombsUncovered() > 10) {
+			if (minefield.getBombsUncovered() > 1) {
 				break;
 			}
 			Thread.sleep((long) (100 - deltaTime));
